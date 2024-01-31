@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="To-do List Website">
+        <meta name="keywords" content="To-do, List, Website">
+        <meta name="author" content="Nikita Shamporov">
+        <title>To-do List Website</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+        <link rel="icon" href="{{ url_for('static', filename='media/icon.png')}}">
+    </head>
+    <body>
+        <div class="container">
+           <div class="Todo-website">
+            <h2>To-do Website <img src="{{ url_for('static', filename='media/icon.png')}}" alr="Icon"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Enter a task">
+                <button type="button">Add</button>
+            </div>
+            <ul id="list-container">
+                <li class="checked">Task1</li>
+                <li>Task1</li>
+                <li>Task1</li>
+            </ul>
+           </div>
+        </div>
+        <script src="Script.js"></script>
+    </body>
+</html>
